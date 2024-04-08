@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: linear-gradient(to right, #ff8a00, #da1b60);
+    
+}
+
+.menu .container{
+max-width: 1100px;
+margin: auto;
+
+}
+
+.back{
+    padding: 32px ;
+    background-color: #2A394F;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+}
+
+.logo{
+    font-size: 40px;
+    color: #15A4F9;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 25px;
+    margin-top: 25px;
+    margin-left: 10px;
+    
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    
+}
+
+.menu .navbar ul li a:hover{
+    color: #15A4F9;
+    
+}
+
+#menu{
+    display: none;
+    
+}
+
+.menu label{
+    cursor: pointer;
+    
+}
+
+@media(max-width: 991px){
+    .menu{
+        padding: 30px 0;
+        
+    }
+    
+}
+
+.menu label{
+    display: initial;
+    
+}
+
+.back{
+    padding: 35px;
+    border-bottom: 2px solid transparent; /* Define un borde transparente para empezar */
+     /* Gradiente de color */
+    animation: animateBorder 1s linear infinite;
+}
+@keyframes animateBorder {
+    0% {
+        border-color: #ff8a00; /* Color inicial del borde */
+    }
+    50% {
+        border-color: #da1b60; /* Color intermedio del borde */
+    }
+    100% {
+        border-color: #ff8a00; /* Color final del borde */
+    }
+
+}
+.menu .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #2A394F;
+    display: none;
+}
+
+.menu .navbar ul li{
+    width: 10%;
+    
+}
+
+#menu:checked ~ .navbar{
+    display: initial;
+}
+.tu{
+    width: 30px;
+    margin-top: 40%;
+    margin-left: -50%;
+}
+label{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 60px;
+}
+.si{
+    width: 200px;
+    height: 50px;
+    font-size: 180%;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    
+}
+.no{
+    width: 200px;
+    height: 50px;
+    font-size: 180%;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: width 0.5s, height 0.5s, font-size 0.5s;
+}
